@@ -1,0 +1,28 @@
+{
+  "name": "discraft",
+  "author": "github.com/giulianoo0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "bot": "turbo run start --filter=bot",
+    "mod:build": "cd apps/mod && ./gradlew build",
+    "mod:build:win": "cd apps/mod && gradlew.bat build"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "turbo": "^2.7.2",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.3.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

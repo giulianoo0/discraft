@@ -1,0 +1,6 @@
+name: ${name}
+version: ${version}
+main: ${main}
+api-version: '1.21'
+description: Discord bot integration for Minecraft server status
+author: giulianoo0
